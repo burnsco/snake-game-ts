@@ -1,0 +1,9 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+dist
+node_modules
+coverage
+.next
+build
+
