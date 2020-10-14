@@ -1,9 +1,9 @@
 import { chakra, ChakraProps, useColorModeValue } from "@chakra-ui/core"
-import useGenerateLocation from "../hooks/useGenerateLoc"
+import useGenerateLocation from "../../hooks/useGenerateLoc"
 
 const Frog = (props: ChakraProps) => {
   const fill = useColorModeValue("#2D3748", "#fff")
-  const location = useGenerateLocation()
+  const location = useGenerateLocation(5000)
 
   return (
     <chakra.svg

@@ -6,7 +6,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Header />
-      <Box minH="100vh" bg={bg}>
+      <Box bg={bg}>
         <Stack isInline spacing={8} pt={8} px={5} mt="4rem">
           <Box as="main" width="100%">
             {children}
