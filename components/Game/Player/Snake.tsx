@@ -4,23 +4,25 @@ import { useState } from "react"
 const Snake: React.FC<{ direction?: string }> = ({ direction }) => {
   const snakeBody = []
   const [snakeLocation, setSnakeLocation] = useState([
-    [0, 0],
-    [2, 0],
-    [4, 0],
-    [6, 0]
+    [0, 2],
+    [0, 4],
+    [0, 6],
+    [0, 8]
   ])
 
-  if (direction === "UP") {
-    console.log(`UP`)
-  }
-  if (direction === "DOWN") {
-    console.log(`DOWN`)
-  }
-  if (direction === "LEFT") {
-    console.log(`LEFT`)
-  }
-  if (direction === "RIGHT") {
-    console.log(`RIGHT`)
+  switch (direction) {
+    case "UP":
+      console.log("UP")
+      break
+    case "DOWN":
+      console.log("DOWN")
+      break
+    case "LEFT":
+      console.log("LEFT")
+      break
+    case "RIGHT":
+      console.log("RIGHT")
+      break
   }
 
   for (let i = 0; i < snakeLocation.length; i++) {
@@ -31,7 +33,7 @@ const Snake: React.FC<{ direction?: string }> = ({ direction }) => {
         left={`${snakeLocation[i][1]}%`}
         width="2%"
         height="2%"
-        background="teal.500"
+        background="orange.400"
         position="absolute"
         border="1px"
         borderStyle="solid"

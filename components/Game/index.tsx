@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react"
-import Container from "./Container"
+import Container from "./Container/index"
 import Frog from "./Food/Frog"
 import Mouse from "./Food/Mouse"
 import Snake from "./Player/Snake"
 
 const SnakeGame: React.FC = () => {
   const [dir, setDir] = useState("RIGHT")
-  const [gameStarted, setGameStarted] = useState(false)
-  const [snakeLocation, setSnakeLocation] = useState(null)
 
   useEffect(() => {
     document.onkeydown = onKeyDown

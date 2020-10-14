@@ -1,7 +1,13 @@
 {
   "name": "snake-game-ts",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burnsco/snake-game-ts.git"
+  },
+  "author": "Corey Burns <coreymburns@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

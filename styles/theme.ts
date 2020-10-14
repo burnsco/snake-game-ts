@@ -4,7 +4,7 @@ import { mode } from "@chakra-ui/theme-tools"
 const customTheme = extendTheme({
   styles: {
     global: props => ({
-      body: {
+      html: {
         color: mode("gray.700", "whiteAlpha.900")(props),
         fontFamily: "Inter, sans-serif"
       }
