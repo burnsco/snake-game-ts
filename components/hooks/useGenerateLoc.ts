@@ -1,5 +1,5 @@
+import { useInterval } from "@chakra-ui/core"
 import { useState } from "react"
-import useInterval from "./useInterval"
 
 export default function useGenerateLocation() {
   const [location, setLocation] = useState([34, 22])
