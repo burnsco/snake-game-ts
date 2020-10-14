@@ -4,7 +4,7 @@ const Container: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <Box position="relative">
       <Box
-        border="2px"
+        border="1px"
         minH="500px"
         minW="500px"
         borderColor="gray.700"
