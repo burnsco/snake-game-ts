@@ -36,6 +36,7 @@ const HeaderContent = () => {
         >
           {navlinks.map(link => (
             <NavLink
+              fontFamily="Inter"
               fontSize="2xl"
               letterSpacing="widest"
               key={link.id}

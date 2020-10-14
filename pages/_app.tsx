@@ -1,9 +1,9 @@
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/core"
-import theme from "@chakra-ui/theme"
 import { AppProps } from "next/dist/next-server/lib/router/router"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
+import theme from "../styles/theme"
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <ColorModeScript initialColorMode="dark" />
@@ -13,5 +13,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
-
-export default MyApp

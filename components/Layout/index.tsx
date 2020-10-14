@@ -1,5 +1,5 @@
 import { Box, Stack, useColorModeValue } from "@chakra-ui/core"
-import Header from "./nav"
+import Header from "../Header"
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const bg = useColorModeValue("gray.200", "black")
@@ -7,7 +7,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <>
       <Header />
       <Box minH="100vh" bg={bg}>
-        <Stack isInline spacing={8} mx="auto" py={6} px={4}>
+        <Stack isInline spacing={8} pt={8} px={5} mt="4rem">
           <Box as="main" width="100%">
             {children}
           </Box>
