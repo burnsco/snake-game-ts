@@ -3,7 +3,7 @@ import useGenerateLocation from "../../hooks/useGenerateLoc"
 
 const Frog = (props: ChakraProps) => {
   const fill = useColorModeValue("#2D3748", "#fff")
-  const location = useGenerateLocation(5000)
+  const location = useGenerateLocation()
 
   return (
     <chakra.svg
