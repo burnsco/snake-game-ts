@@ -1,16 +1,22 @@
 import { chakra, ChakraProps, useColorModeValue } from "@chakra-ui/core"
+import useGenerateLocation from "../hooks/useGenerateLoc"
 
-const Mouse = (props: ChakraProps) => {
+const Frog = (props: ChakraProps) => {
   const fill = useColorModeValue("#2D3748", "#fff")
+  const location = useGenerateLocation()
 
   return (
     <chakra.svg
+      top={`${location[0]}%`}
+      left={`${location[1]}%`}
+      position="absolute"
       aria-hidden="true"
       focusable="false"
       width="1em"
       height="1em"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 64 64"
+      {...props}
     >
       <path
         d="M57.1 23.6C45.7 6.8 18.3 6.8 6.9 23.6c-4 5.9-5 12.5-4.9 13.9c.3 4 9.3 20.6 30 20.5c20.6-.1 29.6-16.4 30-20.5c.1-1.4-.9-8-4.9-13.9"
@@ -47,4 +53,4 @@ const Mouse = (props: ChakraProps) => {
   )
 }
 
-export default Mouse
+export default Frog

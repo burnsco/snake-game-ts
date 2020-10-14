@@ -1,15 +1,18 @@
-import { Flex } from "@chakra-ui/core"
+import { useState } from "react"
 import Container from "./Container"
+import Frog from "./Frog"
 import Mouse from "./Mouse"
 import Snake from "./Snake"
 
 const SnakeGame: React.FC = () => {
+  const [gameStarted, setGameStarted] = useState(false)
+  const [snakeLocation, setSnakeLocation] = useState(null)
+
   return (
     <Container>
       <Snake />
-      <Flex display="flex" align="center" justify="center">
-        <Mouse />
-      </Flex>
+      <Mouse />
+      <Frog />
     </Container>
   )
 }
