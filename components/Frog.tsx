@@ -1,36 +1,12 @@
-import {
-  chakra,
-  ChakraProps,
-  useColorModeValue,
-  useInterval
-} from "@chakra-ui/core"
-import { useState } from "react"
+import { chakra, useColorModeValue } from "@chakra-ui/core"
 
-function useGenerateLocation() {
-  const [location, setLocation] = useState([34, 22])
-
-  function generate() {
-    const max = 98
-    const x = Math.floor(Math.random() * max + 1)
-    const y = Math.floor(Math.random() * max + 1)
-    setLocation([x, y])
-  }
-
-  useInterval(() => {
-    generate()
-  }, 4500)
-
-  return location
-}
-
-const Frog = (props: ChakraProps) => {
+const Frog = ({ foodLocation, ...props }) => {
   const fill = useColorModeValue("#2D3748", "#fff")
-  const location = useGenerateLocation()
 
   return (
     <chakra.svg
-      top={`${location[0]}%`}
-      left={`${location[1]}%`}
+      top={`${foodLocation[0]}%`}
+      left={`${foodLocation[1]}%`}
       position="absolute"
       aria-hidden="true"
       focusable="false"

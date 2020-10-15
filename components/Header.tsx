@@ -11,7 +11,7 @@ import NextLink from "next/link"
 import React from "react"
 import { FaMoon, FaSun } from "react-icons/fa"
 import { GiSnakeBite } from "react-icons/gi"
-import NavLink from "./nav-link"
+import NavLink from "./NavLink"
 
 const navlinks = [{ id: "top-link", title: "SNAKE", href: "/" }]
 

@@ -1,6 +1,6 @@
-import { chakra, useColorModeValue } from "@chakra-ui/core"
+import { chakra, ChakraProps, useColorModeValue } from "@chakra-ui/core"
 
-const RunLogo = props => {
+const RunLogo = (props: ChakraProps) => {
   const fill = useColorModeValue("#2D3748", "#fff")
 
   return (

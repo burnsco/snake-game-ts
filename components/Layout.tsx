@@ -1,8 +1,8 @@
 import { Box, Stack, useColorModeValue } from "@chakra-ui/core"
-import Header from "../Header"
+import Header from "./Header"
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const bg = useColorModeValue("gray.200", "black")
+  const bg = useColorModeValue("white", "black")
   return (
     <>
       <Header />
